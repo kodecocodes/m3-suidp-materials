@@ -1,0 +1,456 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		628899542B2ED64B00C2258F /* AddJokeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628899532B2ED64B00C2258F /* AddJokeView.swift */; };
+		628998EE2B2B5DFB0081CF06 /* CategoriesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628998ED2B2B5DFB0081CF06 /* CategoriesListView.swift */; };
+		628998F22B2B5E990081CF06 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628998F12B2B5E990081CF06 /* SettingsView.swift */; };
+		628998F82B2B5F440081CF06 /* JokeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628998F72B2B5F440081CF06 /* JokeModel.swift */; };
+		628998FF2B2D02F90081CF06 /* JoyJotterVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628998FE2B2D02F90081CF06 /* JoyJotterVM.swift */; };
+		628999012B2D9E7C0081CF06 /* FavoriteJokesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628999002B2D9E7C0081CF06 /* FavoriteJokesView.swift */; };
+		628999032B2DB4220081CF06 /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628999022B2DB4220081CF06 /* CategoryView.swift */; };
+		62A4B6CF2B29E1E50008B33B /* JokeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A4B6CE2B29E1E50008B33B /* JokeView.swift */; };
+		62A4B6D22B29EBF40008B33B /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A4B6D12B29EBF40008B33B /* RatingView.swift */; };
+		62FC53682B29C71E00EDA18D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62FC53602B29C71D00EDA18D /* Assets.xcassets */; };
+		62FC53692B29C71E00EDA18D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62FC53622B29C71D00EDA18D /* Preview Assets.xcassets */; };
+		62FC536A2B29C71E00EDA18D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62FC53632B29C71D00EDA18D /* LaunchScreen.storyboard */; };
+		62FC536B2B29C71E00EDA18D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FC53652B29C71D00EDA18D /* ContentView.swift */; };
+		62FC536D2B29C71E00EDA18D /* AppMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FC53672B29C71D00EDA18D /* AppMain.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		18D775BD22AD944300AE281E /* Joy Jotter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Joy Jotter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		628899532B2ED64B00C2258F /* AddJokeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddJokeView.swift; sourceTree = "<group>"; };
+		628998ED2B2B5DFB0081CF06 /* CategoriesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesListView.swift; sourceTree = "<group>"; };
+		628998F12B2B5E990081CF06 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		628998F72B2B5F440081CF06 /* JokeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeModel.swift; sourceTree = "<group>"; };
+		628998FE2B2D02F90081CF06 /* JoyJotterVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoyJotterVM.swift; sourceTree = "<group>"; };
+		628999002B2D9E7C0081CF06 /* FavoriteJokesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteJokesView.swift; sourceTree = "<group>"; };
+		628999022B2DB4220081CF06 /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
+		62A4B6CE2B29E1E50008B33B /* JokeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeView.swift; sourceTree = "<group>"; };
+		62A4B6D12B29EBF40008B33B /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
+		62FC53602B29C71D00EDA18D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		62FC53622B29C71D00EDA18D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		62FC53642B29C71D00EDA18D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		62FC53652B29C71D00EDA18D /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		62FC53662B29C71D00EDA18D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		62FC53672B29C71D00EDA18D /* AppMain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppMain.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18D775BA22AD944300AE281E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18D775B422AD944300AE281E = {
+			isa = PBXGroup;
+			children = (
+				62FC535F2B29C71D00EDA18D /* Joy Jotter */,
+				18D775BE22AD944300AE281E /* Products */,
+			);
+			indentWidth = 2;
+			sourceTree = "<group>";
+			tabWidth = 2;
+		};
+		18D775BE22AD944300AE281E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18D775BD22AD944300AE281E /* Joy Jotter.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		628998EF2B2B5E400081CF06 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				62FC53652B29C71D00EDA18D /* ContentView.swift */,
+				628999042B2DC2F10081CF06 /* Categories */,
+				62A4B6D02B29EBE40008B33B /* Joke Views */,
+				628999002B2D9E7C0081CF06 /* FavoriteJokesView.swift */,
+				628998F12B2B5E990081CF06 /* SettingsView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		628998F02B2B5E6A0081CF06 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				62FC53632B29C71D00EDA18D /* LaunchScreen.storyboard */,
+				62FC53662B29C71D00EDA18D /* Info.plist */,
+				62FC53602B29C71D00EDA18D /* Assets.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		628998F62B2B5F330081CF06 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				628998F72B2B5F440081CF06 /* JokeModel.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		628998FD2B2D02B20081CF06 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				628998FE2B2D02F90081CF06 /* JoyJotterVM.swift */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		628999042B2DC2F10081CF06 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				628998ED2B2B5DFB0081CF06 /* CategoriesListView.swift */,
+				628999022B2DB4220081CF06 /* CategoryView.swift */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		62A4B6D02B29EBE40008B33B /* Joke Views */ = {
+			isa = PBXGroup;
+			children = (
+				62A4B6CE2B29E1E50008B33B /* JokeView.swift */,
+				62A4B6D12B29EBF40008B33B /* RatingView.swift */,
+				628899532B2ED64B00C2258F /* AddJokeView.swift */,
+			);
+			path = "Joke Views";
+			sourceTree = "<group>";
+		};
+		62FC535F2B29C71D00EDA18D /* Joy Jotter */ = {
+			isa = PBXGroup;
+			children = (
+				62FC53672B29C71D00EDA18D /* AppMain.swift */,
+				628998EF2B2B5E400081CF06 /* View */,
+				628998F62B2B5F330081CF06 /* Model */,
+				628998FD2B2D02B20081CF06 /* ViewModel */,
+				628998F02B2B5E6A0081CF06 /* Resources */,
+				62FC53612B29C71D00EDA18D /* Preview Content */,
+			);
+			path = "Joy Jotter";
+			sourceTree = "<group>";
+		};
+		62FC53612B29C71D00EDA18D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				62FC53622B29C71D00EDA18D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18D775BC22AD944300AE281E /* Joy Jotter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18D775D122AD944400AE281E /* Build configuration list for PBXNativeTarget "Joy Jotter" */;
+			buildPhases = (
+				181FE31D248EA6C900A180EA /* SwiftLint */,
+				18D775B922AD944300AE281E /* Sources */,
+				18D775BA22AD944300AE281E /* Frameworks */,
+				18D775BB22AD944300AE281E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Joy Jotter";
+			productName = MyRWTutorial;
+			productReference = 18D775BD22AD944300AE281E /* Joy Jotter.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18D775B522AD944300AE281E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1200;
+				ORGANIZATIONNAME = Kodeco;
+				TargetAttributes = {
+					18D775BC22AD944300AE281E = {
+						CreatedOnToolsVersion = 11.0;
+					};
+				};
+			};
+			buildConfigurationList = 18D775B822AD944300AE281E /* Build configuration list for PBXProject "Joy Jotter" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 18D775B422AD944300AE281E;
+			productRefGroup = 18D775BE22AD944300AE281E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18D775BC22AD944300AE281E /* Joy Jotter */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18D775BB22AD944300AE281E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62FC536A2B29C71E00EDA18D /* LaunchScreen.storyboard in Resources */,
+				62FC53692B29C71E00EDA18D /* Preview Assets.xcassets in Resources */,
+				62FC53682B29C71E00EDA18D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		181FE31D248EA6C900A180EA /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "PATH=/opt/homebrew/bin:$PATH\nif [ -f ~/com.raywenderlich.swiftlint.yml ]; then\n  if which swiftlint >/dev/null; then\n    swiftlint --no-cache --config ~/com.raywenderlich.swiftlint.yml\n  fi\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18D775B922AD944300AE281E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				628999012B2D9E7C0081CF06 /* FavoriteJokesView.swift in Sources */,
+				62FC536D2B29C71E00EDA18D /* AppMain.swift in Sources */,
+				628899542B2ED64B00C2258F /* AddJokeView.swift in Sources */,
+				62A4B6CF2B29E1E50008B33B /* JokeView.swift in Sources */,
+				62FC536B2B29C71E00EDA18D /* ContentView.swift in Sources */,
+				628998F82B2B5F440081CF06 /* JokeModel.swift in Sources */,
+				628999032B2DB4220081CF06 /* CategoryView.swift in Sources */,
+				628998F22B2B5E990081CF06 /* SettingsView.swift in Sources */,
+				628998EE2B2B5DFB0081CF06 /* CategoriesListView.swift in Sources */,
+				62A4B6D22B29EBF40008B33B /* RatingView.swift in Sources */,
+				628998FF2B2D02F90081CF06 /* JoyJotterVM.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		62FC53632B29C71D00EDA18D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				62FC53642B29C71D00EDA18D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		18D775CF22AD944400AE281E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		18D775D022AD944400AE281E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		18D775D222AD944400AE281E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Joy Jotter/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Joy Jotter/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kodeco.JoyJotter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		18D775D322AD944400AE281E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Joy Jotter/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Joy Jotter/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kodeco.JoyJotter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18D775B822AD944300AE281E /* Build configuration list for PBXProject "Joy Jotter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18D775CF22AD944400AE281E /* Debug */,
+				18D775D022AD944400AE281E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18D775D122AD944400AE281E /* Build configuration list for PBXNativeTarget "Joy Jotter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18D775D222AD944400AE281E /* Debug */,
+				18D775D322AD944400AE281E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 18D775B522AD944300AE281E /* Project object */;
+}
