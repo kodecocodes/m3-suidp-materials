@@ -44,16 +44,15 @@ struct SettingsView: View {
               UserDefaults.standard.set(newValue, forKey: "isFavTabVisible")
             }
           Toggle("Show Favorite button in Joke Card", isOn: $joyJotterVM.isFavVisibleInCard)
+            .onChange(of: joyJotterVM.isFavVisibleInCard) { _, newValue in
+              UserDefaults.standard.set(newValue, forKey: "isFavVisibleInCard")
+            }
         }
       }
       .background(.white)
       .scrollContentBackground(.hidden)
     }
     .padding(.top, 20)
-    .onAppear {
-      // Set the initial isFavTabVisible based on the saved value
-      joyJotterVM.isFavTabVisible = UserDefaults.standard.bool(forKey: "isFavTabVisible")
-    }
   }
 }
 

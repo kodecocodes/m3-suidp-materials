@@ -61,9 +61,9 @@ struct ContentView: View {
       savedSelectedTab = newValue
     }
     .onAppear {
-      // Set the initial selected tab based on the saved value
       selectedTab = savedSelectedTab
       joyJotterVM.isFavTabVisible = UserDefaults.standard.bool(forKey: "isFavTabVisible")
+      joyJotterVM.isFavVisibleInCard = UserDefaults.standard.bool(forKey: "isFavVisibleInCard")
     }
   }
 }
