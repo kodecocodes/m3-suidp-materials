@@ -83,39 +83,44 @@ class JoyJotterVM: ObservableObject {
 
   func writeDataOf(jokes: [Joke]) {
     do {
+      // 1
       // Get the file URL for saving data
       let fileURL = try FileManager.default
         .url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
         .appendingPathComponent("savedJokes.json")
       print("Document Directory Path:", fileURL.path)
 
-      // If the file already exists, remove it (overwrite)
+      // 2
+      // If the file already exists, remove it
       if FileManager.default.fileExists(atPath: fileURL.path) {
         try FileManager.default.removeItem(at: fileURL)
       }
 
+      // 3
       // Encode the jokes array to JSON data and write it to the file
       try JSONEncoder().encode(jokes).write(to: fileURL)
       print("Data written successfully.")
     } catch {
-      print("Error writing Categories: \(error.localizedDescription)")
+      print("Error writing Jokes: \(error.localizedDescription)")
     }
   }
 
   static func readDataOfJokes() -> [Joke]? {
     do {
+      // 1
       // Get the file URL for reading data
       let fileURL = try FileManager.default
         .url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false)
         .appendingPathComponent("savedJokes.json")
 
+      // 2
       // Read data from the file and decode it to an array of Joke objects
       let data = try Data(contentsOf: fileURL)
-      let pastData = try JSONDecoder().decode([Joke].self, from: data)
+      let jokes = try JSONDecoder().decode([Joke].self, from: data)
       print("Data read successfully.")
-      return pastData
+      return jokes
     } catch {
-      print("Error reading Categories: \(error.localizedDescription)")
+      print("Error reading Jokes: \(error.localizedDescription)")
       return nil
     }
   }
