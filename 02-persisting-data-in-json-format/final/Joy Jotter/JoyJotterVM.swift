@@ -115,10 +115,15 @@ class JoyJotterVM: ObservableObject {
 
       // 2
       // Read data from the file and decode it to an array of Joke objects
-      let data = try Data(contentsOf: fileURL)
-      let jokes = try JSONDecoder().decode([Joke].self, from: data)
-      print("Data read successfully.")
-      return jokes
+      if FileManager.default.fileExists(atPath: fileURL.path) {
+        let data = try Data(contentsOf: fileURL)
+        let jokes = try JSONDecoder().decode([Joke].self, from: data)
+        print("Data read successfully.")
+        return jokes
+      } else {
+        print("No jokes found at path:", fileURL.path)
+        return nil
+      }
     } catch {
       print("Error reading Jokes: \(error.localizedDescription)")
       return nil
