@@ -34,8 +34,8 @@ import Foundation
 
 class JokeAuthor: Identifiable, ObservableObject {
   var id = UUID()
-  @Published var name: String
-  @Published var country: String
+  var name: String
+  var country: String
 
   init(id: UUID = UUID(), name: String = "", country: String = "") {
     self.id = id
